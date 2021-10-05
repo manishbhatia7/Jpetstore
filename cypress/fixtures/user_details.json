@@ -1,0 +1,14 @@
+{
+    "userid":"mbhatia102",
+    "new_password":"Test123",
+    "confirm_password":"Test123",
+    "FirstName":"Manish",
+    "LastName":"Bhatia",
+    "Address1":"Bagmane Tech Park",
+    "Email":"mbhatia@codersbrain.com",
+    "Phone":"9876512345",
+    "City":"Bangalore",
+    "State":"Karnataka",
+    "Pincode":"560093",
+    "Country":"India"
+}

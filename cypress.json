@@ -1,0 +1,7 @@
+{
+    "chromeWebSecurity": false,
+    "pageLoadTimeout": 80000,
+    "requestTimeout": 5500,
+    "taskTimeout": 70000,
+    "waitForAnimations": false
+}
