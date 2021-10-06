@@ -27,33 +27,79 @@ describe('This test signs-in,purchase some items and sign out', () => {
         })
     });
     it('Sign it to the user', () => {
-        cy.get("a").contains("Sign In").click()
+        cy.get("a").contains("Sign In").should('be.visible').click()
         cy.fixture('user_details').then((user)=>
         {
-        cy.log("Entering a username")
-        cy.get('input[name=username]').clear().type(user.userid)
-        cy.log("Entering the password")
-        cy.get('input[name=password]').clear().type(user.new_password)
+        cy.log("Asserting that username is present and entering a username")
+        cy.get('input[name=username]').should('be.visible').clear().type(user.userid)
+        cy.log("Asserting that password is present and entering a password")
+        cy.get('input[name=password]').should('be.visible').clear().type(user.new_password)
         cy.log("Submitting the credentials")
-        cy.get('input[name=signon]').click()
+        cy.get('input[name=signon]').should('be.visible').click()
+        cy.get('#WelcomeContent').contains(user.FirstName)
         })
                
     });
-    it('Purchase Fish', () => 
+    it('Find a Category', () => 
     {
+        cy.log("Asserting Sign Out link")
+        cy.get('a').contains("Sign Out").should('be.visible')
+        cy.log("Asserting My Account link")
+        cy.get('a').contains("My Account").should('be.visible')
         cy.get("#SidebarContent > a:nth-child(1) > img").click()
-        cy.get("tr>th").contains("Product ID")
-        cy.get("tr>th").contains("Name")
-        cy.get("a").contains("FI-SW-01").click()
-        cy.xpath("(//a[contains(text(),'Add to Cart')])[1]").click()
-        cy.get("a").contains("Proceed to Checkout").click()
+        cy.fixture('fish_details').then((fish)=>
+        {
+            cy.log("Asserting the category")
+            cy.get('div#Catalog>h2').contains(fish.Category)
+            cy.log("Asserting Product ID")
+            cy.get('#Catalog > table > tbody > tr:nth-child(4) > td:nth-child(2)').contains(fish.Name).should('be.visible')
+            cy.get('#Catalog > table > tbody > tr:nth-child(4) > td:nth-child(1) > a').contains(fish.ProductID).should('be.visible').click()
+        })
+        //
+        //cy.get("a").contains("Proceed to Checkout").click()
     });
-    it('Confirm the Order', () => {
-        cy.get('input[name=newOrder]').click()
-        cy.get("a").contains("Confirm").click()
+    it('Purchase a Category', () => {
+        cy.fixture('fish_details').then((fish)=>
+        {
+            cy.log("Asserting ItemID")
+            cy.get("a").contains(fish.ItemID).should('be.visible')
+            cy.log("Asserting Add to Cart")
+            cy.xpath("(//a[contains(text(),'Add to Cart')])[1]").should('be.visible').click()
+
+        })
+    });
+    it('Updating the Cart', () => {
+        cy.fixture('fish_details').then((fish)=>
+        {
+            cy.get("a").contains(fish.ItemID).should('be.visible')
+            cy.get('tr>td').contains(fish.ProductID).should('be.visible')
+            cy.get('#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=text]').clear().type('1')
+        })
+        cy.get('input[name=updateCartQuantities]').should('be.visible').click()
+        cy.get('a').contains('Proceed to Checkout').should('be.visible').click()
+       });
+
+    it('Asserting the User details one last time', () => {
+        cy.fixture('user_details').then((user)=>
+        {
+            cy.xpath('//input[@name="order.billToFirstName"]').should('have.value',user.FirstName)
+            cy.xpath('//input[@name="order.billToLastName"]').should('have.value',user.LastName)
+            cy.xpath('//input[@name="order.billAddress1"]').should('have.value',user.Address1)          
+
+        })
+        cy.log("Asserting Continue button")
+        cy.get('input[name=newOrder]').should('be.visible').click()
+
+    });
+    it('Confirming the Order', () => {
+        cy.log("Not doing any assertion here")
+        cy.get('div#Catalog').contains("Please confirm the information below and then press continue...").should('be.visible')
+        cy.get('table>tbody>tr>th').contains("Billing Address").should('be.visible')
+        cy.get('a').contains("Confirm").should('be.visible').click()
     });
     it('Sign out of the link', () => {
         cy.log("Signing out")
+        cy.log('Asserting Sign out link')
         cy.get("a").contains("Sign Out").click()
     });
 });
