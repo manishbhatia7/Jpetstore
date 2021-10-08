@@ -1,3 +1,5 @@
+import login from '../support/Pages/PageClasses/loginPage'
+import dash_board from '../support/Pages/PageClasses/dashboard'
 describe('This test signs-in,purchase some items and sign out', () => {
     it('Launch the main application', () => {
         cy.visit('https://petstore.octoperf.com/')
@@ -31,22 +33,25 @@ describe('This test signs-in,purchase some items and sign out', () => {
         cy.fixture('user_details').then((user)=>
         {
         cy.log("Asserting that username is present and entering a username")
-        cy.get('input[name=username]').should('be.visible').clear().type(user.userid)
+        login.UserName.should('be.visible').clear().type(user.userid)
         cy.log("Asserting that password is present and entering a password")
-        cy.get('input[name=password]').should('be.visible').clear().type(user.new_password)
+        login.Password.should('be.visible').clear().type(user.new_password)
         cy.log("Submitting the credentials")
-        cy.get('input[name=signon]').should('be.visible').click()
+        login.SignonButton.should('be.visible').click()
         cy.get('#WelcomeContent').contains(user.FirstName)
         })
                
     });
+    it('Launch Dashboard', () => {
+        cy.log("Asserting Sign Out link")
+        dash_board.Signout.should('be.visible')
+        cy.log("Asserting My Account link")
+        dash_board.Myaccount.should('be.visible')
+        cy.log("Clicking on category")
+        dash_board.Category.should('be.visible').click()
+    });
     it('Find a Category', () => 
     {
-        cy.log("Asserting Sign Out link")
-        cy.get('a').contains("Sign Out").should('be.visible')
-        cy.log("Asserting My Account link")
-        cy.get('a').contains("My Account").should('be.visible')
-        cy.get("#SidebarContent > a:nth-child(1) > img").click()
         cy.fixture('fish_details').then((fish)=>
         {
             cy.log("Asserting the category")
@@ -55,8 +60,7 @@ describe('This test signs-in,purchase some items and sign out', () => {
             cy.get('#Catalog > table > tbody > tr:nth-child(4) > td:nth-child(2)').contains(fish.Name).should('be.visible')
             cy.get('#Catalog > table > tbody > tr:nth-child(4) > td:nth-child(1) > a').contains(fish.ProductID).should('be.visible').click()
         })
-        //
-        //cy.get("a").contains("Proceed to Checkout").click()
+        
     });
     it('Purchase a Category', () => {
         cy.fixture('fish_details').then((fish)=>
