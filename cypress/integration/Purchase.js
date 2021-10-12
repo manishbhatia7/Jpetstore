@@ -1,44 +1,48 @@
 import login from '../support/Pages/PageClasses/loginPage'
 import dash_board from '../support/Pages/PageClasses/dashboard'
+import reg from '../support/Pages/PageClasses/Registration'
+import launch from '../support/Pages/PageClasses/launchpad'
+import signin from '../support/Pages/PageClasses/signin'
 describe('This test signs-in,purchase some items and sign out', () => {
     it('Launch the main application', () => {
         cy.visit('https://petstore.octoperf.com/')
-        expect(cy.get("div#Content").contains("Welcome to JPetStore 6"))
-        cy.get("a").contains("Enter the Store").click()
-        //cy.get("a").contains("Sign In").click()
+        expect(launch.divContent.contains("Welcome to JPetStore 6"))
+        launch.entertheStore.should('be.visible').click()   
+    });
+    
+    it('Navigate to dashboard ', () => {
+        dash_board.signIn.click()
     });
     it.skip('Registers a new user', () => {
-        cy.get("a").contains("Register Now!").click()
+      reg.registerNow.should('be.visible').click()
         cy.fixture('user_details').then((user)=>
         {
-            cy.get('input[name=username]').type(user.userid)
-            cy.get('input[name=password]').type(user.new_password)
-            cy.get('input[name=repeatedPassword]').type(user.confirm_password)
-            cy.xpath('//input[@name="account.firstName"]').type(user.FirstName)
-            cy.xpath('//input[@name="account.lastName"]').type(user.LastName)
-            cy.xpath('//input[@name="account.email"]').type(user.Email)
-            cy.xpath('//input[@name="account.phone"]').type(user.Phone)
-            cy.xpath('//input[@name="account.address1"]').type(user.Address1)
-            cy.xpath('//input[@name="account.city"]').type(user.City),
-            cy.xpath('//input[@name="account.state"]').type(user.State)
-            cy.xpath('//input[@name="account.zip"]').type(user.Pincode)
-            cy.xpath('//input[@name="account.country"]').type(user.Country)
-            cy.xpath('//input[@name="account.listOption"]').should('not.be.checked')
-            cy.xpath('//input[@name="account.listOption"]').check()
-            cy.get('input[name=newAccount]').click()
+           reg.userName.type(user.username)
+           reg.passWord.type(user.new_password)
+           reg.confirmPassword.type(user.confirm_password)
+           reg.firstName.type(user.FirstName)
+           reg.lastName.type(user.LastName)
+           reg.Email.type(user.Email)
+           reg.Phone.type(user.Phone)
+           reg.Address1.type(user.Address1)
+           reg.City.type(user.Address1)
+           reg.State.type(user.State)
+           reg.Zip.type(user.Pincode)
+           reg.Country.type(user.Country)
+           reg.MyListChkbox.should('not.be.checked').click()
+           reg.SubmitDetails.should('be.enabled').click()       
         })
     });
     it('Sign it to the user', () => {
-        cy.get("a").contains("Sign In").should('be.visible').click()
+        dash_board.signIn.should('be.visible').click()
         cy.fixture('user_details').then((user)=>
         {
         cy.log("Asserting that username is present and entering a username")
-        login.UserName.should('be.visible').clear().type(user.userid)
+        reg.userName.should('be.visible').clear().type(user.username)
         cy.log("Asserting that password is present and entering a password")
-        login.Password.should('be.visible').clear().type(user.new_password)
+        reg.passWord.should('be.visible').clear().type(user.new_password)
         cy.log("Submitting the credentials")
-        login.SignonButton.should('be.visible').click()
-        cy.get('#WelcomeContent').contains(user.FirstName)
+        signin.signOn.should('be.enabled').click()        
         })
                
     });

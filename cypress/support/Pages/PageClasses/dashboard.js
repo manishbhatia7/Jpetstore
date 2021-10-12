@@ -19,6 +19,10 @@ class Dashboard
     {
         return cy.get(this.category_link);
     }
+    get signIn()
+    {
+        return cy.get(this.anchor).contains("Sign In");
+    }
 
 }
 const dash_board=new Dashboard()
