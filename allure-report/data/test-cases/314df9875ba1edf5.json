@@ -1,0 +1,56 @@
+{
+  "uid" : "314df9875ba1edf5",
+  "name" : "Registers a new user",
+  "fullName" : "This test signs-in,purchase some items and sign out.Registers a new user",
+  "historyId" : "7945dd57394a40b855ddb9689752d16e",
+  "time" : {
+    "start" : 1634108164002,
+    "stop" : 1634108164002,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Registers a new user"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63e15afb7d1e3c60",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1634108164002,
+        "stop" : 0,
+        "duration" : -1634108164002
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "314df9875ba1edf5.json",
+  "parameterValues" : [ ]
+}

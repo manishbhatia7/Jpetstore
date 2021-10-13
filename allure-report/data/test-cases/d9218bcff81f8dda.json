@@ -1,0 +1,46 @@
+{
+  "uid" : "d9218bcff81f8dda",
+  "name" : "Navigate to dashboard ",
+  "fullName" : "This test signs-in,purchase some items and sign out.Navigate to dashboard ",
+  "historyId" : "d797c91ad654a4660fb161a96902edec",
+  "time" : {
+    "start" : 1634108163702,
+    "stop" : 1634108163986,
+    "duration" : 284
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Navigate to dashboard "
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d9218bcff81f8dda.json",
+  "parameterValues" : [ ]
+}

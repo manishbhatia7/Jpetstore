@@ -1,0 +1,161 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "Find a Category",
+    "uid" : "3988791e419eb952",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108165837,
+      "stop" : 1634108166103,
+      "duration" : 266
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Confirming the Order",
+    "uid" : "3761a1f7cd82226",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108167495,
+      "stop" : 1634108167785,
+      "duration" : 290
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Navigate to dashboard ",
+    "uid" : "d9218bcff81f8dda",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108163702,
+      "stop" : 1634108163986,
+      "duration" : 284
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Updating the Cart",
+    "uid" : "897844c1c9c0b667",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108166450,
+      "stop" : 1634108167198,
+      "duration" : 748
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Registers a new user",
+    "uid" : "314df9875ba1edf5",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1634108164002,
+      "stop" : 1634108164002,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Launch Dashboard",
+    "uid" : "924f13109310589b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108165536,
+      "stop" : 1634108165831,
+      "duration" : 295
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Purchase a Category",
+    "uid" : "b398819d3714efb0",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108166111,
+      "stop" : 1634108166446,
+      "duration" : 335
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Sign out of the link",
+    "uid" : "8d8a5e9337b3562c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108167788,
+      "stop" : 1634108168247,
+      "duration" : 459
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Asserting the User details one last time",
+    "uid" : "2c310234868ae45",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108167204,
+      "stop" : 1634108167479,
+      "duration" : 275
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Registers a new user",
+    "uid" : "63e15afb7d1e3c60",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "unknown",
+    "time" : {
+      "start" : 1634108164002,
+      "stop" : 0,
+      "duration" : -1634108164002
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Sign it to the user",
+    "uid" : "c0715c3d58a6b203",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108164003,
+      "stop" : 1634108165529,
+      "duration" : 1526
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Launch the main application",
+    "uid" : "affde838e88ede17",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1634108158649,
+      "stop" : 1634108163688,
+      "duration" : 5039
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "timeline"
+}

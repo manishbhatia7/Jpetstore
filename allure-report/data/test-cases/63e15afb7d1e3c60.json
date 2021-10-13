@@ -1,0 +1,44 @@
+{
+  "uid" : "63e15afb7d1e3c60",
+  "name" : "Registers a new user",
+  "fullName" : "This test signs-in,purchase some items and sign out.Registers a new user",
+  "historyId" : "7945dd57394a40b855ddb9689752d16e",
+  "time" : {
+    "start" : 1634108164002,
+    "stop" : 0,
+    "duration" : -1634108164002
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Registers a new user"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63e15afb7d1e3c60.json",
+  "parameterValues" : [ ]
+}

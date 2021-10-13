@@ -1,0 +1,46 @@
+{
+  "uid" : "affde838e88ede17",
+  "name" : "Launch the main application",
+  "fullName" : "This test signs-in,purchase some items and sign out.Launch the main application",
+  "historyId" : "35428eab508e48efcc8f1c174110acec",
+  "time" : {
+    "start" : 1634108158649,
+    "stop" : 1634108163688,
+    "duration" : 5039
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Launch the main application"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "affde838e88ede17.json",
+  "parameterValues" : [ ]
+}

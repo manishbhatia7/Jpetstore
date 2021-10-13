@@ -1,0 +1,46 @@
+{
+  "uid" : "b398819d3714efb0",
+  "name" : "Purchase a Category",
+  "fullName" : "This test signs-in,purchase some items and sign out.Purchase a Category",
+  "historyId" : "d14874d9d6a0fc530e4ec19f155b0c2e",
+  "time" : {
+    "start" : 1634108166111,
+    "stop" : 1634108166446,
+    "duration" : 335
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Purchase a Category"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b398819d3714efb0.json",
+  "parameterValues" : [ ]
+}

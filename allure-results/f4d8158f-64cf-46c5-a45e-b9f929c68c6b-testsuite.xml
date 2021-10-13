@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634108158649' stop='1634108168248'>
+    <name>This test signs-in,purchase some items and sign out</name>
+    <title>This test signs-in,purchase some items and sign out</title>
+    <test-cases>
+        <test-case start='1634108158649' status='passed' stop='1634108163688'>
+            <name>Launch the main application</name>
+            <title>Launch the main application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108163702' status='passed' stop='1634108163986'>
+            <name>Navigate to dashboard </name>
+            <title>Navigate to dashboard </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108164002' status='pending' stop='1634108164002'>
+            <name>Registers a new user</name>
+            <title>Registers a new user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634108164002' status='undefined'>
+            <name>Registers a new user</name>
+            <title>Registers a new user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108164003' status='passed' stop='1634108165529'>
+            <name>Sign it to the user</name>
+            <title>Sign it to the user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108165536' status='passed' stop='1634108165831'>
+            <name>Launch Dashboard</name>
+            <title>Launch Dashboard</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108165837' status='passed' stop='1634108166103'>
+            <name>Find a Category</name>
+            <title>Find a Category</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108166111' status='passed' stop='1634108166446'>
+            <name>Purchase a Category</name>
+            <title>Purchase a Category</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108166450' status='passed' stop='1634108167198'>
+            <name>Updating the Cart</name>
+            <title>Updating the Cart</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108167204' status='passed' stop='1634108167479'>
+            <name>Asserting the User details one last time</name>
+            <title>Asserting the User details one last time</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108167495' status='passed' stop='1634108167785'>
+            <name>Confirming the Order</name>
+            <title>Confirming the Order</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1634108167788' status='passed' stop='1634108168247'>
+            <name>Sign out of the link</name>
+            <title>Sign out of the link</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

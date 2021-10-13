@@ -1,0 +1,46 @@
+{
+  "uid" : "897844c1c9c0b667",
+  "name" : "Updating the Cart",
+  "fullName" : "This test signs-in,purchase some items and sign out.Updating the Cart",
+  "historyId" : "dad2b6135f65c00ae089ecade1b8fba9",
+  "time" : {
+    "start" : 1634108166450,
+    "stop" : 1634108167198,
+    "duration" : 748
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Updating the Cart"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "897844c1c9c0b667.json",
+  "parameterValues" : [ ]
+}

@@ -5,15 +5,23 @@
   "main": "index.js",
   "scripts": {
     "cy": "./node_modules/.bin/cypress open",
-    "cypress:open": "cypress open test"    
+    "cypress:open": "cypress open test",
+    "cy:e2e": "cypress run --spec \"cypress/integration/Purchase.js\" --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run cy:e2e && npm run report:allure"
   },
   "author": "Manish Bhatia",
   "license": "ISC",
   "devDependencies": {
+    "@wdio/allure-reporter": "^7.14.1",
     "chai": "^4.3.4",
     "cypress": "^8.5.0",
     "cypress-xpath": "^1.6.2",
     "jasmine": "^3.9.0",
     "mocha": "^9.1.2"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.19.1",
+    "mocha-allure-reporter": "^1.4.0"
   }
 }

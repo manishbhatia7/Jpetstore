@@ -1,0 +1,46 @@
+{
+  "uid" : "8d8a5e9337b3562c",
+  "name" : "Sign out of the link",
+  "fullName" : "This test signs-in,purchase some items and sign out.Sign out of the link",
+  "historyId" : "fdeb9759903ea3c04e3f00e902d622c1",
+  "time" : {
+    "start" : 1634108167788,
+    "stop" : 1634108168247,
+    "duration" : 459
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Sign out of the link"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8d8a5e9337b3562c.json",
+  "parameterValues" : [ ]
+}

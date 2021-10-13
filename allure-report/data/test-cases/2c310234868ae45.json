@@ -1,0 +1,46 @@
+{
+  "uid" : "2c310234868ae45",
+  "name" : "Asserting the User details one last time",
+  "fullName" : "This test signs-in,purchase some items and sign out.Asserting the User details one last time",
+  "historyId" : "6618fb58aa33f1d416c9e742299fd0e7",
+  "time" : {
+    "start" : 1634108167204,
+    "stop" : 1634108167479,
+    "duration" : 275
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Asserting the User details one last time"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c310234868ae45.json",
+  "parameterValues" : [ ]
+}

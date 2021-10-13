@@ -1,0 +1,46 @@
+{
+  "uid" : "3761a1f7cd82226",
+  "name" : "Confirming the Order",
+  "fullName" : "This test signs-in,purchase some items and sign out.Confirming the Order",
+  "historyId" : "c95778b915aa08d0e8793c9b608bd59d",
+  "time" : {
+    "start" : 1634108167495,
+    "stop" : 1634108167785,
+    "duration" : 290
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testClass",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "testMethod",
+    "value" : "Confirming the Order"
+  }, {
+    "name" : "package",
+    "value" : "This test signs-in,purchase some items and sign out"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3761a1f7cd82226.json",
+  "parameterValues" : [ ]
+}
